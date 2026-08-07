@@ -1,0 +1,5 @@
+entry: seal
+finding: e50eede1-6801-48ae-8fde-ec9b51a514a7
+sector: arbeidsliv
+sealed_at: 2026-08-07T12:52:58.400Z
+sha256: 0aeb8109b7a13c93e48cf051e4a913a5642eb00734e33529a418680168010858
