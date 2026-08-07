@@ -1,0 +1,5 @@
+entry: seal
+finding: 87e67e86-65d9-4bca-b973-5e70ef970a04
+sector: utdanning
+sealed_at: 2026-08-07T18:54:35.452Z
+sha256: e7655f809b8463a607edc685931eddf6d320a90ccd5e01cd38b04f07f1d3af1f
