@@ -1,0 +1,5 @@
+entry: seal
+finding: 9d52c81f-fee5-418b-8520-d543923f8867
+sector: samferdsel
+sealed_at: 2026-08-08T19:53:27.717Z
+sha256: cfd96e0e1ff99bc4653321b8c59df13bae393696d2fc91c7974249c0fe0061cc
