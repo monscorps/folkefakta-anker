@@ -33,19 +33,22 @@ Depotet inneholder tre typer poster:
   også dager uten hendelser får en rotpost, fordi stillhet også er en
   påstand som kan etterprøves.
 
-Postfiler kan ha en `.ots`-nabofil — et OpenTimestamps-bevis som forankrer
-filen til Bitcoin-blokkkjeden, uavhengig av både GitHub og Folkefakta.
+Postfiler kan ha en `.ots`-nabofil — et uavhengig OpenTimestamps-bevis for
+tidspunktet, kontrollerbart av hvem som helst uten å stole på GitHub eller
+Folkefakta. Se «Slik verifiserer du» punkt 4 for hva beviset konkret
+forankrer i, og hvordan du sjekker det selv.
 
 ## Tillitsmodell — les dette ærlig
 
 Git-historikk under depoteierens kontroll er i prinsippet forfalskbar av
 depoteieren selv: den som har skriverettigheter til dette depotet, kan i
 teorien slette og skrive om historikken. Det er nettopp derfor
-OpenTimestamps-bevisene finnes — en `.ots`-fil forankrer en post til
-Bitcoin-blokkjeden på et tidspunkt en hvilken som helst utenforstående kan
-etterprøve uavhengig, uten å måtte stole på GitHub eller på Folkefakta. Uten
-et slikt bevis er alt du sitter igjen med, en commit-datostemplet
-git-historikk du må stole på depoteieren for.
+OpenTimestamps-bevisene finnes — de gir en uavhengig, offentlig
+etterprøvbar tidsstempling av en post, som en hvilken som helst
+utenforstående kan kontrollere selv, uten å måtte stole på GitHub eller på
+Folkefakta (se «Slik verifiserer du» punkt 4 for hva beviset konkret
+forankrer i). Uten et slikt bevis er alt du sitter igjen med, en
+commit-datostemplet git-historikk du må stole på depoteieren for.
 
 Den operative databasen bak Folkefakta er mutable (rader kan endres, rettes
 og slettes — blant annet fordi persondata skal kunne slettes på ekte, jamfør
@@ -190,17 +193,19 @@ content. `vault/<finding-id>.txt` holds seal records,
 `vault/<finding-id>.unseal.txt` holds unseal records, and
 `ledger/<YYYY-MM-DD>.txt` holds a daily root hash over the full operational
 event log (including zero-event days — silence is itself provable). Record
-files may carry a `.ots` OpenTimestamps proof anchoring them to the Bitcoin
-blockchain, independent of GitHub and of Folkefakta.
+files may carry a `.ots` OpenTimestamps proof — independent verification of
+the timestamp, checkable by anyone without trusting GitHub or Folkefakta.
+See "To verify" below for what the proof anchors to and how to check it.
 
 **Trust model, stated honestly:** git history under the repo owner's
 control is, in principle, forgeable by the repo owner. That is exactly why
-OpenTimestamps proofs exist — they anchor a record to Bitcoin at a point in
-time any outside party can verify independently, without trusting GitHub or
-Folkefakta. Without one, all you have is a committer-dated git history you
-must trust the repo owner for. The operational database behind Folkefakta
-is mutable; these anchors prove only whether history has changed since the
-last anchor — not that the database is currently "correct."
+OpenTimestamps proofs exist — they give independent, publicly verifiable
+timestamping of a record, checkable by any outside party without trusting
+GitHub or Folkefakta (see "To verify" below for what the proof anchors to).
+Without one, all you have is a committer-dated git history you must trust
+the repo owner for. The operational database behind Folkefakta is mutable;
+these anchors prove only whether history has changed since the last anchor
+— not that the database is currently "correct."
 
 **Signing status, honestly, as of 2026-08-07:** this repo is configured for
 SSH commit signing (`gpg.format ssh`, `user.signingkey` set to the key
