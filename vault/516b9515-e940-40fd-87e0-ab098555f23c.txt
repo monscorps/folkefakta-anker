@@ -1,0 +1,5 @@
+entry: seal
+finding: 516b9515-e940-40fd-87e0-ab098555f23c
+sector: forvaltning
+sealed_at: 2026-08-08T06:59:54.843Z
+sha256: 4fce11907c54bce7a7a45d1d67c53c5f1245f963acf2056b862d430ae8af1ac8
