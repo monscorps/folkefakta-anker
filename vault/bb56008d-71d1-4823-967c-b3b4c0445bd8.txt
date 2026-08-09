@@ -1,0 +1,5 @@
+entry: seal
+finding: bb56008d-71d1-4823-967c-b3b4c0445bd8
+sector: velferd
+sealed_at: 2026-08-09T05:54:25.171Z
+sha256: 56e98375c6f712d5f5192dd952f8f3af53d774c00736f79f7bef30ea922b6d39
