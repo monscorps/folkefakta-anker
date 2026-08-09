@@ -1,0 +1,5 @@
+entry: seal
+finding: 9d265b76-b88d-49f4-94dc-31ff680ea5d8
+sector: klima
+sealed_at: 2026-08-09T00:54:05.010Z
+sha256: 3623254265ed217e2878f8c4704e6c4371ab05e92ce31f63744a55c40ad18329
