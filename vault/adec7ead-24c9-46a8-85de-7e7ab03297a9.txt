@@ -1,0 +1,5 @@
+entry: seal
+finding: adec7ead-24c9-46a8-85de-7e7ab03297a9
+sector: testrigg
+sealed_at: 2026-08-09T00:19:44.873Z
+sha256: 112d9ed4e6cb0bdb7c6ceb4f4d6ec529ac3f6df24642b9ac4017d855815a5ad2
